@@ -214,6 +214,10 @@
             content.appendChild(div);
         });
 
+        window.addEventListener('unload', function () {
+            self.port.emit('unload');
+        }, false);
+
         showEntry(entries[i]);
     }
 
