@@ -189,11 +189,11 @@
                 break;
             case 78: // N : next page
                 event.preventDefault();
-                click($('a.next')[0]);
+                click($('a[rel="nofollow next]"')[0]);
                 break;
             case 80: // P : prev page
                 event.preventDefault();
-                click($('a.prev')[0]);
+                click($('a[rel="nofollow prev"]')[0]);
                 break;
             }
         }, false);
