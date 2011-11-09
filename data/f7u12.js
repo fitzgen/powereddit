@@ -134,7 +134,7 @@
                     url: link.href
                 }));
             } else {
-                content.innerHTML = "No more items on this page.";
+                content.innerHTML = "<h1>No more items on this page.</h1>";
             }
 
         }
