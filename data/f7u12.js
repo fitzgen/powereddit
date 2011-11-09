@@ -55,7 +55,7 @@
 
     function quickMemeExtractSrc (a) {
         return 'http://i.qkme.me/'
-            + a.href.match(/(\w+)\/?$/)[1]
+            + a.href.replace(/\?id=\w+/, '').match(/(\w+)\/?$/)[1]
             + '.jpg';
     }
 
